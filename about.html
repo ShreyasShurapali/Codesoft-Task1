@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+
+</head>
+<body>
+    
+    <div class="header">
+        <a href="index.html" class="logo"><i class='bx bxs-leaf'></i>msh</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <div class="navbar">
+            <a href="index.html">home</a>
+            <a href="contact.html">contact </a>
+            <a href="skills.html">skills</a>
+            <a href="education.html">Education</a>
+            <a href="about.html">about</a>
+        </div>
+    </div> 
+    <section class="about" id="about">
+        <h2 class="heading">About<span>Me</span></h2>
+        <div class="image">
+            <img src="./assets/proflie_image.jpeg">
+        </div>
+        <div class="about-content">
+            <h3>Frontend Developer</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse quam, explicabo, facere, inventore nemo
+                aperiam doloribus deserunt distinctio eligendi impedit optio velit sed aut aliquid facilis corporis.
+                Quae, qui eos!</p>
+        </div>
+        
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            gsap.from(".header", { opacity: 0, duration: 1, y: -50 });
+            gsap.from(".navbar a", { opacity: 0, duration: 1, y: -30, stagger: 0.2 });
+    
+            gsap.from(".about .heading", { opacity: 0, duration: 1, y: -50 });
+            gsap.from(".image", { opacity: 0, duration: 1, x: -50 });
+            gsap.from(".about-content", { opacity: 0, duration: 1, x: 50 });
+        });
+    </script>
+    
+</body>
+</html>

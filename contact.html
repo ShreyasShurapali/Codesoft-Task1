@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html" class="logo"><i class='bx bxs-leaf'></i>msh</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <div class="navbar">
+            <a href="index.html">home</a>
+            <a href="contact.html">contact </a>
+            <a href="skills.html">skills</a>
+            <a href="education.html">Education</a>
+            <a href="about.html">about</a>
+        </div>
+    </div>
+    <section class="contact" id="contact">
+        <h2 class="heading"> Contact<span> Me </span></h2>
+        <form action="#">
+            <div class="input-box">
+                <div class="input-feild">
+                    <input type="text" placeholder="full name" required>
+                    <span class="focus"></span>
+                </div>
+                 <div class="input-feild">
+                    <input type="text" placeholder="email Adress" required>
+                    <span class="focus"></span> 
+                </div>
+                 <div class="input-feild">
+                    <input type="text" placeholder="Address" required>
+                    <span class="focus"></span> 
+                </div>
+                 <div class=" input-feild">
+                    <input type="number" placeholder="contact number" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+            <div class="textarea-field">
+                <textarea name="" id="" cols="30" rows="10" placeholder="your message" required></textarea>
+                <span class="focus"></span>
+            </div>
+            <div class="btn-box btns">
+                <button type="submit" class="btn"> submit</button>
+            </div>
+        </form>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            gsap.from(".header", { opacity: 0, duration: 1, y: -50 });
+            gsap.from(".navbar a", { opacity: 0, duration: 1, y: -30, stagger: 0.2 });
+    
+            gsap.from(".contact .heading", { opacity: 0, duration: 1, y: -50 });
+            gsap.from(".input-box", { opacity: 0, duration: 1, y: 50 });
+            gsap.from(".textarea-field", { opacity: 0, duration: 1, y: 50 });
+            gsap.from(".btn-box", { opacity: 0, duration: 1, y: 50 });
+        });
+    </script>    
+</body>
+</html>

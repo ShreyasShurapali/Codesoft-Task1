@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html" class="logo"><i class='bx bxs-leaf'></i>msh</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <div class="navbar">
+            <a href="index.html">home</a>
+            <a href="contact.html">contact</a>
+            <a href="skills.html">skills</a>
+            <a href="education.html">Education</a>
+            <a href="about.html">about</a>
+        </div>
+    </div>
+
+    <section class="education" id="education">
+        <h2 class="heading">my <span>Journey</span></h2>
+
+        <div class="education-row">
+            <div class="education-column">
+                <h3 class="title">
+                    education
+                </h3>
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bx-calendar-alt'>2019-2022</i></div>
+                            <h3>Diploma - KHK Institute Of Engineering ,Dharwad</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum esse aut soluta
+                                molestiae harum fugiat repellendus sequi cupiditate, eaque quasi?</p>
+                        </div>
+                    </div>
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bx-calendar-alt'>2023-2025</i></div>
+                            <h3>BE - SDMCET ,Dharwad</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum esse aut soluta
+                                molestiae harum fugiat repellendus sequi cupiditate, eaque quasi?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="education-column">
+                <h3 class="title">
+                    Experience
+                </h3>
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-briefcase'>work</i></div>
+                            <h3>Fresher</h3>
+                            <p>molestiae harum fugiat repellendus sequi cupiditate, eaque quasi?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        gsap.from(".header", { opacity: 0, duration: 1, y: -50 });
+        gsap.from(".navbar a", { opacity: 0, duration: 1, y: -30, stagger: 0.2 });
+
+        gsap.from(".education .heading", { opacity: 0, duration: 1, y: -50 });
+        gsap.from(".education-column", { opacity: 0, duration: 1, y: 50, stagger: 0.2 });
+    });
+</script>
+
+</body>
+</html>
